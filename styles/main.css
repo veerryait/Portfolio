@@ -1427,6 +1427,15 @@ h6 {
         text-align: center;
     }
 
+    /* Fix scroll indicator centering on mobile */
+    .scroll-indicator {
+        left: 0;
+        width: 100%;
+        transform: none;
+        display: flex;
+        justify-content: center;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }

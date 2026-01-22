@@ -1356,13 +1356,27 @@ h6 {
     }
 
     .about-image {
+        width: 100%;
         max-width: 250px;
         margin: 0 auto;
+        display: block;
+    }
+
+    /* Fix image zoom issue */
+    .about-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .about-content {
+        padding: 0 var(--spacing-md);
     }
 
     .about-info {
         justify-content: center;
         flex-direction: column;
+        align-items: center;
         gap: var(--spacing-md);
     }
 

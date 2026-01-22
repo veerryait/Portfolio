@@ -44,10 +44,12 @@ function initNavigation() {
     });
 
     // Mobile menu toggle
+    // Mobile menu toggle
     navToggle?.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
+        document.documentElement.classList.toggle('no-scroll');
     });
 
     // Close mobile menu on link click
@@ -56,6 +58,7 @@ function initNavigation() {
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
             document.body.classList.remove('no-scroll');
+            document.documentElement.classList.remove('no-scroll');
         });
     });
 

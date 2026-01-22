@@ -104,8 +104,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Global no-scroll state */
+html.no-scroll,
 body.no-scroll {
-    overflow: hidden;
+    overflow: hidden !important;
+    height: 100% !important;
+    touch-action: none;
+    /* Prevent touch events from propagating */
+}
+
+/* Allow scrolling within the menu */
+.nav-menu {
+    touch-action: auto;
 }
 
 /* Selection */

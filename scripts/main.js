@@ -374,4 +374,10 @@ initScrollToTop();
 
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
+
+    // Dynamic Copyright Year
+    const yearSpan = document.getElementById('copyright-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });

@@ -1317,6 +1317,26 @@ h6 {
 @media (max-width: 768px) {
     .section {
         padding: var(--spacing-3xl) 0;
+        overflow-x: hidden;
+        /* Ensure sections don't overflow */
+    }
+
+    .container {
+        padding: 0 var(--spacing-lg);
+        /* Ensure container has padding */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .nav-menu {

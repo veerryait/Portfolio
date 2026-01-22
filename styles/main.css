@@ -359,6 +359,9 @@ h6 {
     border: none;
     cursor: pointer;
     padding: var(--spacing-sm);
+    z-index: 10001;
+    /* Ensure above mobile menu */
+    position: relative;
 }
 
 .nav-toggle span {
@@ -366,6 +369,19 @@ h6 {
     height: 2px;
     background: var(--text-primary);
     transition: all var(--transition-base);
+    transform-origin: center;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ===== HERO SECTION ===== */

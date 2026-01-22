@@ -90,6 +90,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
 }
 
 body {
@@ -1300,7 +1301,7 @@ h6 {
     .container {
         padding: 0 var(--spacing-xl);
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1393,7 +1394,7 @@ h6 {
     .footer-brand p {
         max-width: none;
     }
-    
+
     .footer-links {
         align-items: center;
         display: flex;
@@ -1412,7 +1413,7 @@ h6 {
     .blog-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .hero-title {
         font-size: 3rem;
     }
@@ -1433,15 +1434,15 @@ h6 {
         width: 100%;
         justify-content: center;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .contact-form-wrapper {
         padding: var(--spacing-lg);
     }

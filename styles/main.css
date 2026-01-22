@@ -1390,7 +1390,15 @@ h6 {
     }
 
     .about-content {
-        padding: 0 var(--spacing-md);
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-content p {
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .about-info {

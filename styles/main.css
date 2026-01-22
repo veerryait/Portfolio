@@ -104,6 +104,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* Selection */
 ::selection {
     background: var(--accent-primary);

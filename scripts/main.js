@@ -47,33 +47,18 @@ function initNavigation() {
     navToggle?.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
-
-        const spans = navToggle.querySelectorAll('span');
-        if (navToggle.classList.contains('active')) {
-            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-            spans[1].style.opacity = '0';
-            spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-        } else {
-            spans[0].style.transform = 'none';
-            spans[1].style.opacity = '1';
-            spans[2].style.transform = 'none';
-        }
+        document.body.classList.toggle('no-scroll');
     });
 
     // Close mobile menu on link click
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
-            navToggle?.classList.remove('active');
-
-            const spans = navToggle?.querySelectorAll('span');
-            if (spans) {
-                spans[0].style.transform = 'none';
-                spans[1].style.opacity = '1';
-                spans[2].style.transform = 'none';
-            }
+            navToggle.classList.remove('active');
+            document.body.classList.remove('no-scroll');
         });
     });
+
 }
 
 function updateActiveNavLink(navLinks) {

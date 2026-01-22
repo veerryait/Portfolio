@@ -1342,16 +1342,14 @@ h6 {
     .nav-menu {
         position: fixed;
         top: 0;
-        /* Cover the entire screen, including behind navbar if needed, or just below */
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--bg-primary);
-        /* Force solid background */
+        background-color: #0a0a0f !important;
+        /* Force hardcoded solid black/dark background */
         border-top: 1px solid var(--border);
         flex-direction: column;
         padding: var(--spacing-4xl) var(--spacing-xl);
-        /* Add top padding to avoid overlap with close button */
         gap: var(--spacing-lg);
         transform: translateX(100%);
         opacity: 0;
@@ -1359,9 +1357,8 @@ h6 {
         transition: all var(--transition-base);
         align-items: center;
         justify-content: flex-start;
-        /* Start from top */
-        z-index: 998;
-        /* Below nav-toggle which is likely in navbar */
+        z-index: 9999;
+        /* Maximize z-index to stay on top */
         overflow-y: auto;
     }
 

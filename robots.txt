@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://veerryait.vercel.app/sitemap.xml
